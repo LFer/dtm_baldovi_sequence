@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<openerp>            
+<openerp>
     <data noupdate="0">
         <!--:::::::::::::::::::Sequencias para Factura:::::::::::::::-->
 
@@ -16,7 +16,7 @@
             <field eval="1" name="number_next"/>
             <field eval="1" name="number_increment"/>
         </record>
-        
+
         <!---------------------Factura SG----------------------------->
         <record id="sequence_type_factura_sg" model="ir.sequence.type">
             <field name="name">Factura SG</field>
@@ -29,7 +29,7 @@
             <field name="prefix">SG A</field>
             <field eval="1" name="number_next"/>
             <field eval="1" name="number_increment"/>
-        </record>     
+        </record>
 
         <!---------------------Factura FL----------------------------->
         <record id="sequence_type_factura_fl" model="ir.sequence.type">
@@ -45,10 +45,10 @@
             <field eval="1" name="number_increment"/>
         </record>
 
-       
+
         <!--:::::::::::::Sequencias para Nota de Crédito:::::::::::::::-->
 
-        <!---------------------Nota de Crédito SL----------------------------->        
+        <!---------------------Nota de Crédito SL----------------------------->
         <record id="sequence_type_nota_credito_sl" model="ir.sequence.type">
             <field name="name">Nota de Crédito Sl</field>
             <field name="code">nota.credito.sl</field>
@@ -62,7 +62,7 @@
             <field eval="1" name="number_increment"/>
         </record>
 
-        <!---------------------Nota de Crédito SG-------------------------->        
+        <!---------------------Nota de Crédito SG-------------------------->
         <record id="sequence_type_nota_credito_sg" model="ir.sequence.type">
             <field name="name">Nota de Crédito SG</field>
             <field name="code">nota.credito.sg</field>
@@ -135,8 +135,8 @@
         </record>
 
 
-        
-        <!--:::::::::::::::::::Devolución Contado:::::::::::::::-->
+
+        <!--:::::::::::::::::::Sequencias para Devolución Contado:::::::::::::::-->
 
         <!----------------Devolución Contado SL-------------------------->
         <record id="sequence_type_devolucion_contado_sl" model="ir.sequence.type">
@@ -183,25 +183,49 @@
 
 
 
-<!--:::::::::::::::::::Sequencias para Remito:::::::::::::::-->
-                    - Remito:
-                                -SL
-                                -SG
-                                -FL  
+		<!--:::::::::::::::::::Sequencias para Remito:::::::::::::::-->
 
-        <record id="" model="ir.sequence.type">
-            <field name="name"></field>
-            <field name="code"></field>
+        <!----------------Remito SL-------------------------->
+        <record id="sequence_remito_sl" model="ir.sequence.type">
+            <field name="name">Remito SL</field>
+            <field name="code">remito.sl</field>
         </record>
 
-        <record id="" model="ir.sequence">
-            <field name="name"></field>
-            <field name="code"></field>
-            <field name="prefix"></field>
+        <record id="sequence_remito_sl" model="ir.sequence">
+            <field name="name">Remito SL</field>
+            <field name="code">remito.sl</field>
+            <field name="prefix">SL A</field>
             <field eval="1" name="number_next"/>
             <field eval="1" name="number_increment"/>
         </record>
 
+        <!----------------Remito SG-------------------------->
+        <record id="sequence_remito_sg" model="ir.sequence.type">
+            <field name="name">Remito SG</field>
+            <field name="code">remito.sg</field>
+        </record>
+
+        <record id="sequence_remito_sg" model="ir.sequence">
+            <field name="name">Remito SG</field>
+            <field name="code">remito.sg</field>
+            <field name="prefix">SG A</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+
+        <!----------------Remito FL-------------------------->
+        <record id="sequence_remito_fl" model="ir.sequence.type">
+            <field name="name">Remito FL</field>
+            <field name="code">remito.fl</field>
+        </record>
+
+        <record id="sequence_remito_fl" model="ir.sequence">
+            <field name="name">Remito FL</field>
+            <field name="code">remito.fl</field>
+            <field name="prefix">FL A</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
 
     </data>
 </openerp>
