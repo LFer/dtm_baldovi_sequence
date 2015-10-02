@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>            
+    <data noupdate="0">
+        <!--:::::::::::::::::::Sequencias para Factura:::::::::::::::-->
+
+        <!---------------------Factura SL----------------------------->
+        <record id="sequence_type_factura_sl" model="ir.sequence.type">
+            <field name="name">Factura SL</field>
+            <field name="code">factura.sl</field> <!--Se repite abajo-->
+        </record>
+
+        <record id="sequence_factura_sl" model="ir.sequence">
+            <field name="name">Factura SL</field>
+            <field name="code">factura.sl</field>
+            <field name="prefix">SL A</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+        
+        <!---------------------Factura SG----------------------------->
+        <record id="sequence_type_factura_sg" model="ir.sequence.type">
+            <field name="name">Factura SG</field>
+            <field name="code">factura.sg</field>
+        </record>
+
+        <record id="sequence_factura_sg" model="ir.sequence">
+            <field name="name">Factura SG</field>
+            <field name="code">factura.sg</field>
+            <field name="prefix">SG A</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>     
+
+        <!---------------------Factura FL----------------------------->
+        <record id="sequence_type_factura_fl" model="ir.sequence.type">
+            <field name="name">Factura SL</field>
+            <field name="code">factura.sl</field>
+        </record>
+
+        <record id="sequence_factura_fl" model="ir.sequence">
+            <field name="name">Factura SL</field>
+            <field name="code">factura.sl</field>
+            <field name="prefix">FL A</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+
+       
+        <!--:::::::::::::Sequencias para Nota de Crédito:::::::::::::::-->
+
+        <!---------------------Nota de Crédito SL----------------------------->        
+        <record id="sequence_type_nota_credito_sl" model="ir.sequence.type">
+            <field name="name">Nota de Crédito Sl</field>
+            <field name="code">nota.credito.sl</field>
+        </record>
+
+        <record id="sequence_nota_credito_sl" model="ir.sequence">
+            <field name="name">Nota de Crédito Sl</field>
+            <field name="code">nota.credito.sl</field>
+            <field name="prefix">SL A</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+
+        <!---------------------Nota de Crédito SG-------------------------->        
+        <record id="sequence_type_nota_credito_sg" model="ir.sequence.type">
+            <field name="name">Nota de Crédito SG</field>
+            <field name="code">nota.credito.sg</field>
+        </record>
+
+        <record id="sequence_nota_credito_sg" model="ir.sequence">
+            <field name="name">Nota de Crédito SG</field>
+            <field name="code">nota.credito.sg</field>
+            <field name="prefix">SG A</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+
+        <!---------------------Nota de Crédito FL-------------------------->
+        <record id="sequence_type_nota_credito_fl" model="ir.sequence.type">
+            <field name="name">Nota de Crédito FL</field>
+            <field name="code">nota.credito.fl</field>
+        </record>
+
+        <record id="sequence_nota_credito_fl" model="ir.sequence">
+            <field name="name">Nota de Crédito FL</field>
+            <field name="code">nota.credito.fl</field>
+            <field name="prefix">FL A</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+
+        <!--:::::::::::::::::::Sequencias para Contado:::::::::::::::-->
+
+        <!---------------------Nota de Contado SL--------------------->
+        <record id="sequence_type_contado_sl" model="ir.sequence.type">
+            <field name="name">Contado SL</field>
+            <field name="code">contado.sl</field>
+        </record>
+
+        <record id="sequence_contado_sl" model="ir.sequence">
+            <field name="name">Contado SL</field>
+            <field name="code">contado.sl</field>
+            <field name="prefix">SL A</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+
+        <!----------------Nota de Contado SG-------------------------->
+        <record id="sequence_type_contado_sg" model="ir.sequence.type">
+            <field name="name">Contado SG</field>
+            <field name="code">contado.sg</field>
+        </record>
+
+        <record id="sequence_contado_sg" model="ir.sequence">
+            <field name="name">Contado SG</field>
+            <field name="code">contado.sg</field>
+            <field name="prefix">SG A</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+
+        <!----------------Nota de Contado FL-------------------------->
+        <record id="sequence_type_contado_fl" model="ir.sequence.type">
+            <field name="name">Contado FL</field>
+            <field name="code">contado.fl</field>
+        </record>
+
+        <record id="sequence_contado_fl" model="ir.sequence">
+            <field name="name">Contado FL</field>
+            <field name="code">contado.fl</field>
+            <field name="prefix">FL A</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+
+
+        
+        <!--:::::::::::::::::::Devolución Contado:::::::::::::::-->
+
+        <!----------------Devolución Contado SL-------------------------->
+        <record id="sequence_type_devolucion_contado_sl" model="ir.sequence.type">
+            <field name="name">Devolución Contado SL</field>
+            <field name="code">devolucion.contado.sl</field>
+        </record>
+
+        <record id="sequence_devolucion_contado_sl" model="ir.sequence">
+            <field name="name">Devolución Contado SL</field>
+            <field name="code">devolucion.contado.sl</field>
+            <field name="prefix">SL A</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+
+        <!----------------Devolución Contado SG-------------------------->
+        <record id="sequence_devolucion_contado_sg" model="ir.sequence.type">
+            <field name="name">Devolución Contado SG</field>
+            <field name="code">devolucion.contado.sg</field>
+        </record>
+
+        <record id="sequence_devolucion_contado_sg" model="ir.sequence">
+            <field name="name">Devolución Contado SG</field>
+            <field name="code">devolucion.contado.sg</field>
+            <field name="prefix">SG A</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+
+
+        <!----------------Devolución Contado FL-------------------------->
+        <record id="sequence_devolucion_contado_fl" model="ir.sequence.type">
+            <field name="name">Devolución Contado FL</field>
+            <field name="code">devolucion.contado.fl</field>
+        </record>
+
+        <record id="sequence_devolucion_contado_fl" model="ir.sequence">
+            <field name="name">Devolución Contado FL</field>
+            <field name="code">devolucion.contado.fl</field>
+            <field name="prefix">SG A</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+
+
+
+<!--:::::::::::::::::::Sequencias para Remito:::::::::::::::-->
+                    - Remito:
+                                -SL
+                                -SG
+                                -FL  
+
+        <record id="" model="ir.sequence.type">
+            <field name="name"></field>
+            <field name="code"></field>
+        </record>
+
+        <record id="" model="ir.sequence">
+            <field name="name"></field>
+            <field name="code"></field>
+            <field name="prefix"></field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+
+
+    </data>
+</openerp>
