@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
-    <data noupdate="0">
+    <data noupdate="1">
         <!--:::::::::::::::::::Sequencias para Factura:::::::::::::::-->
 
-        <!---------------------Factura SL----------------------------->
+        <!--*******************Factura SL***************************-->
         <record id="sequence_type_factura_sl" model="ir.sequence.type">
             <field name="name">Factura SL</field>
             <field name="code">factura.sl</field> <!--Se repite abajo-->
@@ -17,7 +17,7 @@
             <field eval="1" name="number_increment"/>
         </record>
 
-        <!---------------------Factura SG----------------------------->
+        <!--***********************Factura SG***********************-->
         <record id="sequence_type_factura_sg" model="ir.sequence.type">
             <field name="name">Factura SG</field>
             <field name="code">factura.sg</field>
@@ -31,10 +31,10 @@
             <field eval="1" name="number_increment"/>
         </record>
 
-        <!---------------------Factura FL----------------------------->
+        <!--********************Factura FL**************************-->
         <record id="sequence_type_factura_fl" model="ir.sequence.type">
-            <field name="name">Factura SL</field>
-            <field name="code">factura.sl</field>
+            <field name="name">Factura FL</field>
+            <field name="code">factura.fl</field>
         </record>
 
         <record id="sequence_factura_fl" model="ir.sequence">
@@ -48,7 +48,7 @@
 
         <!--:::::::::::::Sequencias para Nota de Crédito:::::::::::::::-->
 
-        <!---------------------Nota de Crédito SL----------------------------->
+        <!--********************Nota de Crédito SL***********************-->
         <record id="sequence_type_nota_credito_sl" model="ir.sequence.type">
             <field name="name">Nota de Crédito Sl</field>
             <field name="code">nota.credito.sl</field>
@@ -62,7 +62,7 @@
             <field eval="1" name="number_increment"/>
         </record>
 
-        <!---------------------Nota de Crédito SG-------------------------->
+        <!--****************Nota de Crédito SG***************************-->
         <record id="sequence_type_nota_credito_sg" model="ir.sequence.type">
             <field name="name">Nota de Crédito SG</field>
             <field name="code">nota.credito.sg</field>
@@ -76,7 +76,7 @@
             <field eval="1" name="number_increment"/>
         </record>
 
-        <!---------------------Nota de Crédito FL-------------------------->
+        <!--****************Nota de Crédito FL***************************-->
         <record id="sequence_type_nota_credito_fl" model="ir.sequence.type">
             <field name="name">Nota de Crédito FL</field>
             <field name="code">nota.credito.fl</field>
@@ -92,7 +92,7 @@
 
         <!--:::::::::::::::::::Sequencias para Contado:::::::::::::::-->
 
-        <!---------------------Nota de Contado SL--------------------->
+        <!--****************Nota de Contado SL**********************-->
         <record id="sequence_type_contado_sl" model="ir.sequence.type">
             <field name="name">Contado SL</field>
             <field name="code">contado.sl</field>
@@ -106,7 +106,7 @@
             <field eval="1" name="number_increment"/>
         </record>
 
-        <!----------------Nota de Contado SG-------------------------->
+        <!--******************Nota de Contado SG********************-->
         <record id="sequence_type_contado_sg" model="ir.sequence.type">
             <field name="name">Contado SG</field>
             <field name="code">contado.sg</field>
@@ -120,7 +120,7 @@
             <field eval="1" name="number_increment"/>
         </record>
 
-        <!----------------Nota de Contado FL-------------------------->
+        <!--******************Nota de Contado FL********************-->
         <record id="sequence_type_contado_fl" model="ir.sequence.type">
             <field name="name">Contado FL</field>
             <field name="code">contado.fl</field>
@@ -138,7 +138,7 @@
 
         <!--:::::::::::::::::::Sequencias para Devolución Contado:::::::::::::::-->
 
-        <!----------------Devolución Contado SL-------------------------->
+        <!--******************Devolución Contado SL****************************-->
         <record id="sequence_type_devolucion_contado_sl" model="ir.sequence.type">
             <field name="name">Devolución Contado SL</field>
             <field name="code">devolucion.contado.sl</field>
@@ -152,8 +152,8 @@
             <field eval="1" name="number_increment"/>
         </record>
 
-        <!----------------Devolución Contado SG-------------------------->
-        <record id="sequence_devolucion_contado_sg" model="ir.sequence.type">
+        <!--********************Devolución Contado SG*********************-->
+        <record id="sequence_type_devolucion_contado_sg" model="ir.sequence.type">
             <field name="name">Devolución Contado SG</field>
             <field name="code">devolucion.contado.sg</field>
         </record>
@@ -167,8 +167,8 @@
         </record>
 
 
-        <!----------------Devolución Contado FL-------------------------->
-        <record id="sequence_devolucion_contado_fl" model="ir.sequence.type">
+        <!--******************Devolución Contado FL****************************-->
+        <record id="sequence_type_devolucion_contado_fl" model="ir.sequence.type">
             <field name="name">Devolución Contado FL</field>
             <field name="code">devolucion.contado.fl</field>
         </record>
@@ -185,8 +185,8 @@
 
 		<!--:::::::::::::::::::Sequencias para Remito:::::::::::::::-->
 
-        <!----------------Remito SL-------------------------->
-        <record id="sequence_remito_sl" model="ir.sequence.type">
+        <!--******************Remito SL***********************-->
+        <record id="sequence_type_remito_sl" model="ir.sequence.type">
             <field name="name">Remito SL</field>
             <field name="code">remito.sl</field>
         </record>
@@ -199,8 +199,8 @@
             <field eval="1" name="number_increment"/>
         </record>
 
-        <!----------------Remito SG-------------------------->
-        <record id="sequence_remito_sg" model="ir.sequence.type">
+        <!--*****************Remito SG************************-->
+        <record id="sequence_type_remito_sg" model="ir.sequence.type">
             <field name="name">Remito SG</field>
             <field name="code">remito.sg</field>
         </record>
@@ -213,8 +213,8 @@
             <field eval="1" name="number_increment"/>
         </record>
 
-        <!----------------Remito FL-------------------------->
-        <record id="sequence_remito_fl" model="ir.sequence.type">
+        <!--****************Remito FL************************-->
+        <record id="sequence_type_remito_fl" model="ir.sequence.type">
             <field name="name">Remito FL</field>
             <field name="code">remito.fl</field>
         </record>
